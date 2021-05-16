@@ -19,4 +19,4 @@ print(f'Working directory is {os.getcwd()}')
 open_file('../files/randomfilename.ttt')
 
 # Check file that does exist
-open_file('../files/pending.csv')
+open_file('../files/files/pending.csv')

@@ -4,5 +4,6 @@ def open_file(file_name, encoding):
             print(line)
 
 
-open_file('encoding.txt', 'UTF-8')
-open_file('encoding.txt', 'utf_8_sig')
+open_file('files/encoding.txt', 'UTF-8')
+open_file('files/encoding.txt', 'utf_8_sig')
+open_file('files/encoding.txt', 'ASCII')
