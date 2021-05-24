@@ -1,21 +1,23 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def read_training_set():
-    data = pd.read_csv('data.csv')
+    data = pd.read_csv('data.csv', header=None)
     return data.iloc[:, 0], data.iloc[:, 1]
 
 
 X, y = read_training_set()
 
+# initialize gradient descent
 m = len(X)
 iterations = 1000
 alpha = 0.0001
-
 theta1 = 0
 theta2 = 0
 
+# implement gradient descent
 for i in range(iterations):
     predicted_value = theta1 + X * theta2
 
